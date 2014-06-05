@@ -9,8 +9,6 @@ else
 	echo -e "[*] Usuario tor ya existe"
 fi
 
-
-
 mkdir -p $TORCHROOT
 mkdir -p $TORCHROOT/etc/tor
 mkdir -p $TORCHROOT/dev
@@ -36,17 +34,53 @@ cp -v /usr/share/GeoIP/GeoIP.dat $TORCHROOT/tor/share/tor/geoip
 sh -c "grep tor /etc/passwd > $TORCHROOT/etc/passwd"
 sh -c "grep tor /etc/group > $TORCHROOT/etc/group"
 
-
-
-
-
-
 cp /usr/bin/tor         $TORCHROOT/usr/bin/
 cp /lib/libnss* /lib/libnsl* /lib/ld-linux.so* /lib/libresolv* /lib/libgcc_s.so* $TORCHROOT/usr/lib/
 cp $(ldd /usr/bin/tor | awk '{print $3}'|grep --color=never "^/") $TORCHROOT/usr/lib/
 cp -r /var/lib/tor      $TORCHROOT/var/lib/
 chown -R tor:tor $TORCHROOT/var/lib/tor
+chmod 0770 $TORCHROOT -v
+chmod 0444 $TORCHROOT/etc/* -v
+chmod a+r $TORCHROOT/lib/* -v
+chmod 0755 $TORCHROOT/tor{/bin,/etc,/share} -v
+chmod 0755 $TORCHROOT/tor/share{/doc,/man,/share}
+chown tor:tor $TORCHROOT/var -Rv
+chmod 0700 $TORCHROOT/var/lib/tordata -v
+chmod 0755 $TORCHROOT{/var/run/tor,/var/log/tor} -v
+chmod 0755 $TORCHROOT{/dev,/etc,/lib,/lib64,/usr,/tor,/var,/var/lib} -v
+
+if [ ! -f /etc/init.d/tor-chroot ]; then
+	cp tor-inid.d-script /etc/init.d/tor-chroot
+	chmod 555 /etc/init.d/tor-chroot
+fi
 
 chroot --userspec=tor:tor /opt/torchroot /usr/bin/tor 
+chmod 555 $TORCHROOT/tor/bin/tor-chroot
+
+# Basic Tor config file to get stated with.
+echo -e "[*] Copy basic torrc file"
+cat << 'EOF' > $TORCHROOT/tor/etc/tor/torrc
+# basic tor conf for clients
+# all options documented https://www.torproject.org/docs/tor-manual.html.en
+User tor
+RunAsDaemon 1
+PidFile /var/run/tor/tor.pid
+GeoIPFile /tor/share/tor/geoip
+Log notice file /var/log/tor/notices.log
+DataDirectory /var/lib/tordata
+
+SocksPort 127.0.0.1:9050
+
+# make all OR connections through the SOCKS 4 proxy
+# Socks4Proxy 127.0.0.1:8080
+
+# not an exit node
+ExitPolicy reject *:*
+EOF
+
+cat << 'EOF' > /etc/default/tor
+RUN_DAEMON="yes"
+EOF
+chmod 400 /etc/default/tor
 
 exit 0
