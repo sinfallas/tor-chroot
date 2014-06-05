@@ -1,4 +1,23 @@
-commit a0bacaf7215a5483fc0d418a203ba9a270fa91ae (HEAD, origin/master, origin/HEAD, master)
+commit 341c1faf2f05a80ba7185db3b3bf7b183b7c2d97 (HEAD, origin/master, origin/HEAD, master)
+Author: sinfallas <sinfallas@gmail.com>
+Date:   Wed Jun 4 21:12:52 2014 -0430
+
+    * se agrega la funcion para eliminar el chroot
+    * se agrega la funcion para iniciar el chroot
+
+commit 150320829cff85578ebbc78e825a6d91b42cd2bd (tag: v0.1)
+Author: Jesus Palencia <sinfallas@users.noreply.github.com>
+Date:   Tue Jun 3 11:42:23 2014 -0430
+
+    Create AUTHORS
+
+commit 6a71dd2fdc79860e888cf5c4cb16dfa971e97ac5
+Author: sinfallas <sinfallas@gmail.com>
+Date:   Wed May 28 23:59:29 2014 -0430
+
+    * changelog
+
+commit a0bacaf7215a5483fc0d418a203ba9a270fa91ae
 Author: sinfallas <sinfallas@gmail.com>
 Date:   Wed May 28 23:58:31 2014 -0430
 
