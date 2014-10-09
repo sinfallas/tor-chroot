@@ -1,4 +1,16 @@
-commit 341c1faf2f05a80ba7185db3b3bf7b183b7c2d97 (HEAD, origin/master, origin/HEAD, master)
+commit a9f0652e4473800ebd80c76b62e332607cce2a5e (HEAD, origin/master, origin/HEAD, master)
+Author: sinfallas <sinfallas@gmail.com>
+Date:   Thu Oct 9 15:26:12 2014 -0430
+
+    * se agrega informacion de copyright
+
+commit 3449c8c16ccee725df8ccd056239028fc017a369
+Author: sinfallas <sinfallas@gmail.com>
+Date:   Wed Jun 4 21:13:50 2014 -0430
+
+    * changelog
+
+commit 341c1faf2f05a80ba7185db3b3bf7b183b7c2d97
 Author: sinfallas <sinfallas@gmail.com>
 Date:   Wed Jun 4 21:12:52 2014 -0430
 
