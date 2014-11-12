@@ -1,6 +1,7 @@
 #!/bin/bash
 #elaborado por sinfallas
 export TORCHROOT=/opt/torchroot
+apt-get update
 apt-get -y install tor
 
 if [ `grep "tor" /etc/passwd | wc -l` -eq 0 ]; then
