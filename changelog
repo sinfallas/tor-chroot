@@ -1,4 +1,16 @@
-commit a9f0652e4473800ebd80c76b62e332607cce2a5e (HEAD, origin/master, origin/HEAD, master)
+commit 864c23a85f04aafd176d0d69204809abc326c79a (HEAD, origin/master, origin/HEAD, master)
+Author: sinfallas <sinfallas@gmail.com>
+Date:   Tue Nov 11 22:02:10 2014 -0430
+
+    * actualizacion menor
+
+commit dee5e4965c61f133bf8b77005a2790e522f8ea44 (tag: v0.1.1)
+Author: sinfallas <sinfallas@gmail.com>
+Date:   Thu Oct 9 15:27:46 2014 -0430
+
+    * changelog
+
+commit a9f0652e4473800ebd80c76b62e332607cce2a5e
 Author: sinfallas <sinfallas@gmail.com>
 Date:   Thu Oct 9 15:26:12 2014 -0430
 
