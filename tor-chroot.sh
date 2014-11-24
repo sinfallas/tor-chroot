@@ -1,5 +1,4 @@
 #!/bin/bash
-#elaborado por sinfallas
 export TORCHROOT=/opt/torchroot
 apt-get update
 apt-get -y install tor

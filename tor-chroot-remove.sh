@@ -1,5 +1,4 @@
 #!/bin/bash
-#elaborado por sinfallas
 TORCHROOT=/opt/chroot_tor/
 rm $TORCHROOT -rfv 
 rm /etc/default/tor -rfv 

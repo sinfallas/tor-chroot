@@ -1,8 +1,6 @@
 #! /bin/sh
 set -e
-#elaborado por sinfallas
 TORCHROOT=/opt/chroot_tor
-
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 DAEMON=$TORCHROOT/tor/bin/tor-chroot
 EXECDAEMON=$TORCHROOT/tor/bin/tor
