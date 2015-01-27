@@ -1,4 +1,16 @@
-commit 60c86e6236362cdac29258951b938cf9bcf6bc66 (HEAD, origin/master, origin/HEAD, master)
+commit f4e6818f31bbfd7ae4fb4f633b67e1a894317375 (HEAD, origin/master, origin/HEAD, master)
+Author: Jose Perez <sinfallas@users.noreply.github.com>
+Date:   Tue Jan 27 11:01:56 2015 -0430
+
+    Update README.md
+
+commit 528e8da793c303c116210c1afd17480b7514f905
+Author: sinfallas <sinfallas@gmail.com>
+Date:   Thu Jan 8 00:48:42 2015 -0430
+
+    * changelog
+
+commit 60c86e6236362cdac29258951b938cf9bcf6bc66
 Author: sinfallas <sinfallas@gmail.com>
 Date:   Thu Jan 8 00:47:41 2015 -0430
 
