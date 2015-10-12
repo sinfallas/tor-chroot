@@ -1,0 +1,13 @@
+#!/bin/bash
+# Made by Sinfallas <sinfallas@yahoo.com>
+# Licence: GPL-2
+if [[ $USER != root ]]; then
+	echo -e "\e[00;31mERROR: DEBES SER ROOT\e[00m"
+	exit 1
+fi
+TORCHROOT=/opt/chroot_tor/
+rm $TORCHROOT -rfv 
+rm /etc/default/tor -rfv 
+rm /etc/init.d/tor-chroot -rfv 
+userdel tor -f 
+exit 0
