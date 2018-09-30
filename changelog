@@ -1,4 +1,10 @@
-commit cc6137c568a40dfe3d2537f83d7802049f1ccb4d (HEAD, origin/master, origin/HEAD, master)
+commit ac2d913f4efce7a97c78a42413c9fba53d5f0815 (HEAD -> master, tag: v0.1.5, origin/master, origin/HEAD)
+Author: jose perez <sinfallas@gmail.com>
+Date:   Mon Feb 29 21:37:25 2016 -0430
+
+    * changelog
+
+commit cc6137c568a40dfe3d2537f83d7802049f1ccb4d
 Author: jose perez <sinfallas@gmail.com>
 Date:   Mon Feb 29 21:37:06 2016 -0430
 
@@ -160,7 +166,7 @@ Date:   Tue Nov 11 22:02:10 2014 -0430
 
     * actualizacion menor
 
-commit dee5e4965c61f133bf8b77005a2790e522f8ea44 (tag: v0.1.1)
+commit dee5e4965c61f133bf8b77005a2790e522f8ea44
 Author: sinfallas <sinfallas@gmail.com>
 Date:   Thu Oct 9 15:27:46 2014 -0430
 
